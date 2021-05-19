@@ -37,7 +37,7 @@ font-family: 'Lato', sans-serif; */
   /* DROPDOWN BTN START*/  
   .dropdown-btn{ z-index: 10;
                 display:inline-block;
-                position:absolute;
+                position:fixed;
                 background-color: transparent;
                 border: none;
                 right: 1rem;
@@ -59,6 +59,10 @@ font-family: 'Lato', sans-serif; */
         align-items: center;
         padding: var(--default-padding);
         flex-wrap: wrap;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        border-bottom: 1px solid var(--red);
         
         
 
@@ -153,6 +157,7 @@ font-family: 'Lato', sans-serif; */
          position: relative;
           width: 100%;
           height: var(--section-height);
+          padding-top: var(--default-top-padding);
          
  }
  
@@ -170,10 +175,11 @@ font-family: 'Lato', sans-serif; */
               padding:.5rem 1rem;
               border-radius: .3rem;
               position: absolute;
-              top:15%;
+              top:25%;
               right: 0;
               transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
-            
+              position:fixed;
+            z-index: 1;
             
  }
  .cart-button:hover{ padding-right: 2rem;
@@ -223,7 +229,7 @@ font-family: 'Lato', sans-serif; */
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  padding-top: var(--default-top-padding);
   width: 100%;
   height: var(--section-height);
   position: relative;
@@ -236,7 +242,9 @@ font-family: 'Lato', sans-serif; */
                     background-image:url('../img/pattern-us-background.png');
                     display:block;
                     width:100%;
-                    height:100%;
+                    height: 100%;
+                    top: 0;
+                  
 
   }
 
@@ -519,9 +527,16 @@ label{display: flex;
                   text-transform: uppercase;
                   border:none;
                   align-self: center;
+                  
+                  transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1)
 
  }
  .form-btn-submit:hover{cursor: pointer;   
+                        background-color: #ff1245;
+                        background-image: linear-gradient(45deg, #eb0c3c, #ff0258);  
+                        outline: var(--red);
+                                                            
+
   }
  .contacto-left-img-container{text-align: center;
 
@@ -728,6 +743,7 @@ label{display: flex;
                       position:relative;
                       z-index: 10;
                       padding-bottom: var(--default-padding);
+                      
                       
 
 
