@@ -35,7 +35,7 @@ font-family: 'Lato', sans-serif; */
 
 
   /* DROPDOWN BTN START*/  
-  .dropdown-btn{ z-index: 10;
+  .dropdown-btn{ z-index: 110;
                 display:inline-block;
                 position:fixed;
                 background-color: transparent;
@@ -60,7 +60,7 @@ font-family: 'Lato', sans-serif; */
         padding: var(--default-padding);
         flex-wrap: wrap;
         position: fixed;
-        z-index: 1;
+        z-index: 100;
         width: 100%;
         border-bottom: 1px solid var(--red);
         
@@ -129,6 +129,9 @@ font-family: 'Lato', sans-serif; */
 }
 /*KEYFRAME ANIMATION END*/
 /*ANIMATION NAV ITEMS END*/
+ 
+
+
 
 
 
@@ -187,25 +190,26 @@ font-family: 'Lato', sans-serif; */
   }
 
 
- .hero-title, .us-title{ 
+ .hero-title, .us-title, .promo-title{ 
    color:var(--white);
    display:inline-block;
    font-family: 'Courgette', sans-serif;
    font-size: 13vw;
+   text-shadow:
+   -.5px -.5px 0 var(--black),  
+    .5px -.5px 0 var(--black),
+    -.5px .5px 0 var(--black),
+     .5px .5px 0 var(--black);
 
  }
  
- .hero-title span {font-family: 'Courgette', sans-serif;
+ .hero-title span,.promo-title span {font-family: 'Courgette', sans-serif;
           color:var(--red);
 
  }
  .us-title{z-index: 1;
   font-size: 10vw;
-  text-shadow:
-  -.5px -.5px 0 var(--black),  
-   .5px -.5px 0 var(--black),
-   -.5px .5px 0 var(--black),
-    .5px .5px 0 var(--black);
+ 
 
 }
 .us-title span {font-family: 'Courgette', sans-serif; 
@@ -213,7 +217,11 @@ font-family: 'Lato', sans-serif; */
                 
 
  }
-
+ 
+ .promo-title{font-size:10vw;
+              z-index: 1;
+   
+  }
 
  /* header HOME END */
 
@@ -253,7 +261,48 @@ font-family: 'Lato', sans-serif; */
 
 
  /* header US END */
-    
+
+ 
+
+
+ /* HEADER PROMO START  */
+
+.promo-header{background-image: url('../img/promo-background-lg.jpg');
+              background-position: center;
+              background-size: cover;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-top: var(--default-top-padding);
+              width: 100%;
+              height: var(--section-height);
+              position: relative;
+              text-align: center;
+
+ }
+ .promo-header::before{content: '';
+  position: absolute;  
+  background-image:url('../img/pattern-us-background.png');
+  display:block;
+  width:100%;
+  height: 100%;
+  top: 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /* HEADER PROMO END  */
 
  /* MAIN HOME  START */
 
@@ -658,7 +707,7 @@ label{display: flex;
                           height: 40px;
                           position: relative;
                           text-align: center;
-                          z-index: 10;
+                          z-index: 1;
                           margin-right: 1rem;
                           color: var(--white);
 
@@ -859,7 +908,9 @@ XX-Large devices (larger desktops)
     } */
     .us-header{ background-image: url('../img/background-header-us-md.jpg');
     }
-   
+     .promo-header {background-image: url('../img/promo-background-md.jpg')
+
+     }
     .main-right{
       
 
@@ -890,6 +941,9 @@ XX-Large devices (larger desktops)
  
     }
     .us-header{ background-image: url('../img/background-header-us-sm.jpg');
+    }
+    .promo-header {background-image: url('../img/promo-background-sm.jpg')
+
     }
     .nav{
       flex-direction: column;
@@ -937,6 +991,18 @@ XX-Large devices (larger desktops)
 
   /*ABOUT SECTION SETTINGS*/
  
+
+
+
+  
+/*HEADER MOVES WHEN NAV BUTTON IS ON CLASS*/
+  .header-move{padding-top: calc(var(--default-top-padding)*4);
+
+  }
+
+
+/*HEADER MOVES WHEN NAV BUTTON IS ON CLASS*/
+
  
  
  
