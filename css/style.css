@@ -182,7 +182,8 @@ font-family: 'Lato', sans-serif; */
               right: 0;
               transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
               position:fixed;
-            z-index: 1;
+              /* z-index: 1; */
+              z-index: 2;
             
  }
  .cart-button:hover{ padding-right: 2rem;
@@ -304,6 +305,108 @@ font-family: 'Lato', sans-serif; */
 
  /* HEADER PROMO END  */
 
+
+
+
+ /*SECTION PROMO START*/
+ .promo-section-first-container{ 
+
+  }
+.promo-section{padding-top: var(--default-top-padding);
+  padding-left: calc(var(--default-padding)*2);
+  padding-right:calc( var(--default-padding)*2);
+               
+              
+
+ }
+ .promo-section-title{border-bottom: 1px solid var(--red);
+
+  }
+ .promo-section-title,.promo-section-title span{font-family: var(--title-font);
+                                                color: var(--red);
+                                                
+                                                display:inline-block;
+  }
+
+  .promo-section-title span{color: var(--black);
+
+   }
+.promo-section-text{color: var(--black);
+                    padding-top: var(--default-padding);  
+                    line-height:1.5rem;  
+                    font-style: italic;  
+
+ }
+
+
+ .promo-section-container{
+                         
+                          display: grid;
+                          grid-template-columns: repeat( auto-fill, minmax(350px, 1fr) );
+                          gap: 1rem;
+                          padding-top: var(--default-padding);
+
+                          
+
+  }
+
+  .promo-section-container-promo-box:nth-child(odd){ background-color: var(--black);
+
+  } 
+  .promo-section-container-promo-box:nth-child(odd) .promo-section-container-promo-box-title{ 
+    color: var(--red);
+    font-family: var(--title-font);
+   }
+   .promo-section-container-promo-box:nth-child(odd) .promo-section-promo-box-content{
+      color: var(--white);
+    }
+    .promo-section-container-promo-box:nth-child(odd) .promo-section-promo-box-content p:first-child{
+      font-size: 3rem;
+      font-style: italic;
+    }
+
+   .promo-section-container-promo-box:nth-child(even) .promo-section-container-promo-box-title{ 
+    color: var(--black);
+    font-family: var(--title-font);
+    
+
+   }
+   .promo-section-container-promo-box:nth-child(even) .promo-section-promo-box-content p:first-child{
+     color: var(--black);
+    font-size: 3rem;
+    font-style: italic;
+  }
+
+
+  .promo-section-container-promo-box{padding:  var(--default-padding);
+                              border-radius: 5px;
+                              display: flex;
+                              justify-content: space-around;
+                              align-items: center;
+                              box-shadow: 6px 6px 8px -3px rgb(0 0 0 / 44%);
+                             
+                             
+                              
+
+  } 
+  .promo-section-promo-box-content .fa-cart-arrow-down{font-size: 2rem;
+
+
+   }
+   .promo-section-promo-box-content{  display: flex;
+                                      flex-direction: column;
+                                      justify-content: center;
+                                      align-items: center;
+                                      text-align: center;
+                                      line-height: 2.5rem;
+
+    }
+   /* .promo-section-container-promo-box:nth-child(5) p:first-child{
+
+
+  } */
+
+ /*SECTION PROMO END*/
  /* MAIN HOME  START */
 
   .team{
@@ -503,6 +606,9 @@ font-family: 'Lato', sans-serif; */
       overflow-x: hidden;
 
  }
+ .mapa-us{padding-top: var(--default-top-padding);
+
+}
 iframe{width: 100%;
     
       height: 40vh;
@@ -561,15 +667,28 @@ label{display: flex;
  .form-input-email{height: 1.7rem; 
 
   }
+
+  .form-input-name:hover{border: 1px solid var(--red)!important;
+
+  }
+ .form-input-email:hover{border: 1px solid var(--red);
+
+  }
+ 
  .contacto-right-icon{ position: absolute;
                         top: 1.4rem;
                         right: 0.3rem;
+                        color: var(--red)
 
   }
  .comentarios{   flex-grow: 1;
                 min-height: 15rem;
 
  }  
+ .comentarios:hover{border: 1px solid var(--red);
+ 
+
+}  
 .form-btn-submit{ padding: var(--btn-padding);
                   background-color: var(--red);
                   color: var(--white);
@@ -633,6 +752,7 @@ label{display: flex;
 .adress i{color: var(--red);
           font-size:1.5rem; 
           margin-right: .5rem; 
+          
 
  } 
 /* CONTACTO END */
@@ -920,6 +1040,7 @@ XX-Large devices (larger desktops)
     .menu-container{  grid-template-columns:repeat(auto-fit, minmax(270px, 1fr) );
 
     } 
+  
 
 
  
@@ -930,8 +1051,20 @@ XX-Large devices (larger desktops)
         border:none;
 
    }
-    
+  .promo-section{padding-left: calc(var(--default-padding)*.5);
+                padding-right:calc( var(--default-padding)*.5);
 
+ }
+ .promo-section-container{ grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+                        
+  }
+  .promo-section-container-promo-box{flex-direction: column;
+
+   }
+   .promo-section-container-promo-box {
+    flex-direction: column;
+    text-align: center;
+    }  
   }
  @media (max-width:767.98px){
    .dropdown-btn{display:block;

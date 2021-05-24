@@ -1,8 +1,7 @@
 
-window.onload = function() {
-  
- 
 
+  
+  var h2 = document.getElementsByTagName('h2');
 
 dropdownBtn.addEventListener('click',()=>{
    navMenu.classList.toggle('nav-visible') ;
@@ -21,4 +20,3 @@ dropdownBtn.addEventListener('click',()=>{
 
 
 
-};
