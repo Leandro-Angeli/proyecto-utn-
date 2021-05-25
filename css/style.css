@@ -13,6 +13,22 @@ font-family: 'Lato', sans-serif; */
        
        --btn-padding:1rem 2rem;
  }
+    /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+    @media (prefers-reduced-motion: reduce) {
+      html:focus-within {
+       scroll-behavior: auto;
+      }
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  
+       /* MEDIA QUERY PARA APAGAR ANIMACIONES */
 
 *{ margin: 0;
     padding: 0;
@@ -20,6 +36,9 @@ font-family: 'Lato', sans-serif; */
     font-family: 'Lato', sans-serif;
 
  }
+ *:focus{border: 1px solid var(--red);
+
+  }
  body{ background-color: var(--white);
         overflow-x: clip;
 
@@ -68,6 +87,9 @@ font-family: 'Lato', sans-serif; */
 
   }
 .nav-logo{ width:15rem;
+
+ }
+ .nav-logo-link:focus{border: 1px solid white;
 
  }
 .nav-menu{ color: var(--white);
@@ -191,6 +213,8 @@ font-family: 'Lato', sans-serif; */
   }
 
 
+
+
  .hero-title, .us-title, .promo-title{ 
    color:var(--white);
    display:inline-block;
@@ -304,7 +328,6 @@ font-family: 'Lato', sans-serif; */
 
 
  /* HEADER PROMO END  */
-
 
 
 
@@ -910,7 +933,7 @@ label{display: flex;
                       line-height: 1.5rem; 
                       color: var(--black);
                       position:relative;
-                      z-index: 10;
+                     
                       padding-bottom: var(--default-padding);
                       
                       

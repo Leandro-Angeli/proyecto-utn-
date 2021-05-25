@@ -23,9 +23,12 @@
 
 
     <!-- NAV -->
-    <button class="dropdown-btn" id='dropdownBtn' aria-label="Menu secciones"><i class="fas fa-bars dropdown-btn-icon"></i></button>
+    
     <nav class='nav'    >
-        <img class="nav-logo" src="img/logo-nav-path.svg" alt="kawai sushi" srcset="">
+        <a href="#main" class="nav-logo-link">
+             <img class="nav-logo" src="img/logo-nav-path.svg" alt="kawai sushi main" srcset="">
+        </a>
+        <button class="dropdown-btn" id='dropdownBtn' aria-label="Menu secciones"  aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars dropdown-btn-icon"></i></button>
         <ul class='nav-menu'id='navMenu'>
             <li class='nav-menu-item'> <a href="index.html" class='nav-menu-item-link'> Home</a></li>
             <li class='nav-menu-item'> <a href="nosotros.html" class='nav-menu-item-link'> Nosotros</a></li>
@@ -39,12 +42,12 @@
     </nav>
       <!-- NAV -->
 
-    <header class="promo-header" id='header-move'>
+    <header class="promo-header" id='header-move' tabindex='0'>
 
         <!-- CART BUTTON START -->
         <div class="cart-button">
             <i class="fas fa-shopping-cart"></i>
-            <a href="#">Pedidos Online &#x21DB;</a>
+            <a href="#" class="cart-button-link">Pedidos Online &#x21DB;</a>
         </div>
 
         <!-- CART BUTTON END -->
@@ -55,7 +58,7 @@
 
     </header>
     
-    <section class="promo-section">
+    <main class="promo-section" id='main'>
         <div class="promo-section-first-container">
                 <h2 class='promo-section-title'> <span>Nuestras</span> Promociones </h2>
                 <p class='promo-section-text'>Vení a disfrutar de una noche romántica con tu pareja, una cena entre amigas, o a festejar tu cumpleaños en familia o con
@@ -66,7 +69,7 @@
 
 
 
-            <div class="promo-section-container">
+            <div class="promo-section-container" role="lista de promociones">
                       <div class="promo-section-container-promo-box">
                                 <h2 class='promo-section-container-promo-box-title'>Jueves de  Pareja</h2>
                                     <div class="promo-section-promo-box-content">
@@ -114,7 +117,7 @@
 
 
             </div>
-    </section>
+        </main>
 
 
  <!-- MAP START -->

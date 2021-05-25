@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +13,13 @@
 </head>
 <body>
       <!-- NAV -->
-      <button class="dropdown-btn" id='dropdownBtn' aria-label="Menu secciones"><i class="fas fa-bars dropdown-btn-icon"></i></button>
+     
       <nav class='nav'    >
-          <img class="nav-logo" src="img/logo-nav-path.svg" alt="kawai sushi" srcset="">
+          <a href="#main" class="nav-logo-link" >
+            <img class="nav-logo" src="img/logo-nav-path.svg" alt="kawai sushi main" srcset="">
+        </a>
+        <button class="dropdown-btn" id='dropdownBtn' aria-label="Menu secciones" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars dropdown-btn-icon" aria-label="Desplegar Menu"></i></button>
+
           <ul class='nav-menu'id='navMenu'>
               <li class='nav-menu-item'> <a href="index.html" class='nav-menu-item-link'> Home</a></li>
               <li class='nav-menu-item'> <a href="nosotros.html" class='nav-menu-item-link'> Nosotros</a></li>
@@ -30,11 +34,11 @@
         <!-- NAV -->
       <!-- ATRIBUCION BACKGROUND HEADER <a href="https://sp.depositphotos.com/category/textures-backgrounds.html">Vista elevada del pescado crudo y varios ingredientes en la mesa blanca - sp.depositphotos.com</a> -->
 
-      <header class="us-header" id='header-move'>
+      <header class="us-header" id='header-move' tabindex='0'>
 
         <div class="cart-button">
             <i class="fas fa-shopping-cart"></i>
-            <a href="#">Pedidos Online &#x21DB;</a>
+            <a href="#" title="pedidos online link">Pedidos Online &#x21DB;</a>
         </div>
         <h1 class='us-title' >Nuestra Casa <br> 
            <span>Nuestra Pasion</span>
@@ -48,7 +52,7 @@
 
     <!-- ABOUT VA EN PAGINA NOSOTROS  -->
     <!-- ABOUT START -->
- <section class="about">
+ <main class="about" id='main'>
 
    <div class='about-container'>
        <div class="about-title">
@@ -79,7 +83,7 @@
                 <img src="img/slide/slide-img-1-small-compressed.jpg" alt="" srcset="">
             </div>  
          </div>
-</section>  
+</main>  
 
     <!-- ABOUT END -->
 
