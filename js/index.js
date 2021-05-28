@@ -22,12 +22,38 @@ dropdownBtn.addEventListener('click',()=>{
 
 
 
-  // SLIDE
-
-
-   // SLIDE
+  
 
  })
+
+
+ // SKIP TO MAIN FUNCTION
+ var toMainLink = document.getElementById('to-main-link');
+var accesibilityCont = document.getElementById('accesibility-container');
+
+ toMainLink.addEventListener('focus',show);
+ function show() {
+   accesibilityCont.classList.add('screen-only-focus');
+   accesibilityCont.classList.remove('screen-only');
+  
+   
+ }
+ toMainLink.addEventListener('focusout',hide);
+ function hide() {
+  accesibilityCont.classList.add('screen-only');
+  accesibilityCont.classList.remove('screen-only-focus');
+ 
+  
+}
+
+
+
+
+ show();
+hide();
+
+
+// SKIP TO MAIN FUNCTION
 
 
 
