@@ -1,7 +1,7 @@
 
 
   
-  var h2 = document.getElementsByTagName('h2');
+ 
   
  
   
@@ -32,6 +32,7 @@ dropdownBtn.addEventListener('click',()=>{
 var accesibilityCont = document.getElementById('accesibility-container');
 
  toMainLink.addEventListener('focus',show);
+ 
  function show() {
    accesibilityCont.classList.add('screen-only-focus');
    accesibilityCont.classList.remove('screen-only');
@@ -39,6 +40,7 @@ var accesibilityCont = document.getElementById('accesibility-container');
    
  }
  toMainLink.addEventListener('focusout',hide);
+
  function hide() {
   accesibilityCont.classList.add('screen-only');
   accesibilityCont.classList.remove('screen-only-focus');
@@ -48,13 +50,11 @@ var accesibilityCont = document.getElementById('accesibility-container');
 
 
 
-
  show();
 hide();
 
 
 // SKIP TO MAIN FUNCTION
-
 
 
 

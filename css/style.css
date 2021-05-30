@@ -43,12 +43,12 @@ font-family: 'Lato', sans-serif; */
   outline: 1px solid var(--red);
 
 }
-   .cromatic-palette-btn{background-color: var(--white);
-                          border:1px solid var(--red); 
-                          padding: .2rem .3rem;
-                          outline: 1px solid var(--red);
-
-     }
+.palette-change-btn{background-color: var(--white);
+                    padding:.2rem .3rem;
+                    border:1px solid var(--red);
+  
+ }
+  
   
     /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
     @media (prefers-reduced-motion: reduce) {
@@ -71,24 +71,11 @@ font-family: 'Lato', sans-serif; */
     padding: 0;
     box-sizing:border-box;
     font-family: 'Lato', sans-serif;
+    
 
  }
  
- *:focus{outline:1px solid var(--red);
-          border: 1px solid var(--red);
-            outline-offset: 1px;
 
-  }
-
-  /*heading border focus */
-
-  h1:focus,h2:focus, h3:focus{outline: 1px solid var(--red);
-            border: 1px solid var(--red);
-              outline-offset: 1px;
-
-  }
-
-  /*heading border focus */
  body{ background-color: var(--white);
         overflow-x: clip;
 
@@ -417,7 +404,7 @@ font-family: 'Lato', sans-serif; */
  .promo-section-container{
                          
                           display: grid;
-                          grid-template-columns: repeat( auto-fill, minmax(350px, 1fr) );
+                          grid-template-columns: repeat( 3, 1fr );
                           gap: 1rem;
                           padding-top: var(--default-padding);
 
@@ -459,6 +446,7 @@ font-family: 'Lato', sans-serif; */
                               justify-content: space-around;
                               align-items: center;
                               box-shadow: 6px 6px 8px -3px rgb(0 0 0 / 44%);
+                              height: 22vw;
                              
                              
                               
@@ -942,22 +930,14 @@ label{display: flex;
 
 
 .slide-container{ 
-                  padding-top: var(--default-top-padding);
+                  padding-top: var(--default-padding);
                   max-width: 100%;
+                  display:block;
+                  margin: 0 auto;
 
 }
-.slide-container .slide img {max-width: 100%;
-                              display:block;
-                              margin: 0 auto;
- }
-.slide-container::before{position:absolute;
-                         content: 'slider';   
-                         background: black;
-                         color:white;
-                         display:inline-block;
-                         margin: auto;
 
- }
+
 
 
 /* TESTIMONIAL START */
@@ -1054,7 +1034,20 @@ label{display: flex;
 
 /*SOCIAL MEDIA END */
 
+ /*SLIDER SETTINGS*/
+ .swiper-wrapper{height:28vh;
 
+ }
+.slide-img{    width: 30vw;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+
+ }
+
+
+
+/*SLIDER SETTINGS*/
 
 
 
@@ -1112,9 +1105,7 @@ XX-Large devices (larger desktops)
 
     }   
 
-    .menu-container{  grid-template-columns:repeat(auto-fit, minmax(270px, 1fr) );
-
-    } 
+   
   
 
 
@@ -1122,6 +1113,9 @@ XX-Large devices (larger desktops)
    }  
 
  @media (max-width: 991.98px) { 
+  .menu-container{  grid-template-columns:repeat(auto-fit, minmax(270px, 1fr) );
+
+  } 
   .form{position:static;
         border:none;
 
@@ -1142,6 +1136,9 @@ XX-Large devices (larger desktops)
     }  
   }
  @media (max-width:767.98px){
+   .promo-section-container-promo-box{height:auto;
+     
+    }
    .dropdown-btn{display:block;
 
     }
@@ -1200,6 +1197,8 @@ XX-Large devices (larger desktops)
   /*ABOUT SECTION SETTINGS*/
  
 
+ 
+
 
 
   
@@ -1220,7 +1219,7 @@ XX-Large devices (larger desktops)
  
     }
  
- 
+  
   }
 
 
@@ -1231,6 +1230,8 @@ XX-Large devices (larger desktops)
 
 
   /*MEDIA QUERIES*/ 
+
+
   /* ATTRIBUTION PICS SLIDE
 
   PIC 1 :Photo by Vinicius Benedit on Unsplash 
