@@ -441,7 +441,7 @@ font-family: 'Lato', sans-serif; */
 
 
   .promo-section-container-promo-box{padding:  var(--default-padding);
-                              border-radius: 5px;
+                              
                               display: flex;
                               justify-content: space-around;
                               align-items: center;

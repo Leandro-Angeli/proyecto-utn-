@@ -9,22 +9,33 @@ dropdownBtn.addEventListener('click',()=>{
    navMenu.classList.toggle('nav-visible') ;
     header = document.querySelector('#header-move');
    header.classList.toggle('header-move');
-   var aria =  dropdownBtn.getAttribute('aria-expanded');
-   if (aria === true ) {
-     aria= false;
-     
-   } else { aria= true;
-     
-   }
-   dropdownBtn.setAttribute('aria-expanded',aria);
   
+ 
+   
+    
+ })
+
+ 
+ dropdownBtn.addEventListener('click',toggleData)
+
+
+ function toggleData() {
+  var aria =  dropdownBtn.getAttribute('aria-expanded');
+  if (aria == "true") 
+  {
+ aria = "false"
+  } else {
+  aria = "true"
+  }
+  dropdownBtn.setAttribute("aria-expanded",aria);
+  
+  }
    
 
 
 
   
 
- })
 
 
  // SKIP TO MAIN FUNCTION
