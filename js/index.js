@@ -15,7 +15,7 @@ dropdownBtn.addEventListener('click',()=>{
     
  })
 
- 
+
  dropdownBtn.addEventListener('click',toggleData)
 
 
@@ -66,6 +66,7 @@ hide();
 
 
 // SKIP TO MAIN FUNCTION
+
 
 
 
