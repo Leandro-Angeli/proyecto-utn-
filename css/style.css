@@ -211,7 +211,9 @@ font-family: 'Lato', sans-serif; */
 
 
  /* header HOME START */
- .header{ background-image: url('/img/background-retina-compressed.jpg');
+ .header{ background-image:linear-gradient(
+  282deg
+  , #b7b4b436, #02020275), url('/img/background-retina-compressed.jpg');
           
           background-position: center;
           background-size: cover;
@@ -1093,7 +1095,9 @@ XX-Large devices (larger desktops)
   }
 
    @media (max-width:1399.98px){
-    .header{  background-image: url('/img/background-main-medium-compressed.jpg');
+    .header{  background-image: linear-gradient(
+      282deg
+      , #b7b4b436, #02020275),url('/img/background-main-medium-compressed.jpg');
  
      }
      /* .social-media-icons-container{
@@ -1149,7 +1153,9 @@ XX-Large devices (larger desktops)
    .dropdown-btn{display:block;
 
     }
-   .header{  background-image: url('/img/background-main-compressed.jpg');
+   .header{  background-image:linear-gradient(
+    282deg
+    , #b7b4b436, #02020275), url('/img/background-main-compressed.jpg');
  
     }
     .us-header{ background-image: url('../img/background-header-us-sm.jpg');
@@ -1222,7 +1228,9 @@ XX-Large devices (larger desktops)
  
   }
   @media (max-width:575.98px){
-   .header{  background-image: url('/img/background-mobile-compressed.jpg');
+   .header{  background-image:linear-gradient(
+    282deg
+    , #b7b4b436, #02020275), url('/img/background-mobile-compressed.jpg');
  
     }
  
