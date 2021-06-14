@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-utn",
+  "version": "1.0.0",
+  "description": "dependencia proyecto utn ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leandro-Angeli/proyecto-utn-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leandro-Angeli/proyecto-utn-/issues"
+  },
+  "homepage": "https://github.com/Leandro-Angeli/proyecto-utn-#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0"
+  }
+}
